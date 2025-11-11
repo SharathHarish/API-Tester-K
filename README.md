@@ -144,6 +144,72 @@ If something goes wrong, you’ll see a clear error message in the response box 
 
 ---
 
+<img width="1536" height="1024" alt="file_00000000a8dc7209bf0af5a153652493 (1)" src="https://github.com/user-attachments/assets/ab352b60-4c80-4035-a713-ac74ceb71774" />
+
+Tech Stack
+
+Component	Description
+
+Language	Python 3.8+
+GUI Framework	Tkinter
+Networking	Requests
+Storage	JSON Files (History, Collections, Environment)
+
+
+
+---
+
+📂 Project Structure
+
+API-Tester/
+│
+├── main.py                  # Main application file
+│
+├── environments/
+│   └── default.json         # Environment variables (hidden, used in backend)
+│
+├── collections/             # Saved API requests
+│
+├── data/
+│   └── history.json         # Request history storage
+│
+└── README.md                # Project documentation
+
+
+---
+
+🧠 Challenges Faced
+
+1. Making Tkinter Look Modern
+
+Tkinter doesn’t have built-in dark mode or styling like modern UI frameworks.
+It took a lot of fine-tuning with colors, padding, and font styles to make it visually appealing.
+
+2. Preventing Layout Shifts
+
+When toggling between light and dark themes, the UI initially “jumped” due to re-rendering.
+I solved this by locking the window geometry before applying the new theme and restoring it afterward.
+
+3. Merging Response Tabs into One View
+
+The first version had separate tabs for Raw, JSON, and Headers.
+They worked, but switching between them felt clunky.
+Combining them into one view required careful formatting but made the app much easier to use.
+
+4. Handling Multiple Content Types
+
+Not all APIs return JSON — some return plain text or HTML.
+To prevent the app from crashing, I added a fallback mechanism that prints the response as text if JSON parsing fails.
+
+5. Keeping It Lightweight
+
+I wanted to keep the project dependency-free except for requests, so I avoided external libraries for theming or layout.
+This made the code more educational and easy for others to understand.
+
+
+---
+
+
 📜 License
 
 This project is licensed under the MIT License — you are free to use, modify, and distribute it for personal or commercial purposes.
