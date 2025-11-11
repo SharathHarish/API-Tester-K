@@ -209,6 +209,47 @@ This made the code more educational and easy for others to understand.
 
 ---
 
+Installation (Single EXE File)
+
+You don’t need to install Python or any libraries.
+The entire app is packaged into one single .exe file for easy use.
+
+ Windows Installation Steps
+
+1. Download the file
+
+Go to the Releases section of this repository.
+
+Download the file named K API Tester.exe.
+
+
+
+2. Run the app
+
+Double-click on K API Tester.exe.
+
+The application will open instantly — no installation or setup needed.
+
+
+
+3. Automatic setup (first launch)
+
+The app will automatically create the following folders (if they don’t already exist):
+
+/environments
+/collections
+/data
+
+These are used for saving your request history, environment variables, and saved collections.
+
+
+
+4. Start Testing APIs!
+
+Enter a URL, choose a method (GET, POST, PUT, DELETE, PATCH), and click Send.
+
+You’ll see the response, status, and headers in a single output window.
+--
 
 📜 License
 
