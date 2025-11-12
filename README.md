@@ -23,6 +23,11 @@ The goal of this project was to create a compact yet powerful tool that lets dev
 
 > 🔗 **API Tester Demo:** [Watch Demo on Google Drive](https://drive.google.com/file/d/1QhoRGXZrqjOd30_bcHKJUaKMTkaDlTQj/view?usp=drivesdk)
 
+## 🔽 Executable File Download
+You can download the latest version of **K API Tester** here:
+
+👉 [Download K API Tester (.exe)](https://github.com/SharathHarish/API-Tester-K/releases/latest/download/K%20API%20Tester.exe)
+
 ---
 
 ## ✨ Features and Concepts Explained
