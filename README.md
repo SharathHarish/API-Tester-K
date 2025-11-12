@@ -160,6 +160,17 @@ Storage	JSON Files (History, Collections, Environment)
 ---
 
 📂 Project Structure
+API-Tester/
+│
+├── K API Tester.exe          # Stand-alone executable (no installation needed)
+├── README.md                 # Project documentation
+└── assets/                   # Folder containing screenshots for this README
+    ├── light_theme.png
+    ├── dark_theme.png
+    ├── get_method.png
+    ├── post_method.png
+    ├── export_feature.png
+    └── exception_handling.png
 ---
 Screenshots
 
