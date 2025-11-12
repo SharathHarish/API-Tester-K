@@ -277,6 +277,30 @@ To prevent the app from crashing, I added a fallback mechanism that prints the r
 I wanted to keep the project dependency-free except for requests, so I avoided external libraries for theming or layout.
 This made the code more educational and easy for others to understand.
 
+6.EXE Crashing Due to Missing .ico File
+
+After converting the Python script to a standalone .exe using PyInstaller, the app crashed immediately when run on another system.
+The error was caused by a missing .ico file that wasn’t bundled properly during build.
+
+Added the icon explicitly in the PyInstaller command:
+
+pyinstaller --onefile --noconsole --icon=icon.ico main.py
+
+and ensured icon.ico was located in the same directory as main.py.
+This prevented missing-file crashes.
+
+
+---
+
+7. Blurry Icon in Title Bar and Taskbar
+
+After fixing the crash, the icon appeared blurry and pixelated on some Windows systems, especially with scaling enabled (125% or 150% DPI).
+
+The .ico used had a single small resolution (e.g., 32×32 px), which Windows scaled poorly.
+
+Replaced it with a multi-resolution ICO file containing multiple sizes (16×16, 32×32, 48×48, 64×64, and 256×256).
+This was created using an image editor (like GIMP or ICOConvert) to ensure crisp icons in both the title bar and taskbar.
+
 
 ---
 
