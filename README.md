@@ -64,7 +64,7 @@ will automatically resolve to:
 
 https://jsonplaceholder.typicode.com/posts/1
 
-
+```
 ---
 
 4. 📦 Unified Response Output
