@@ -150,7 +150,7 @@ Storage	JSON Files (History, Collections, Environment)
 ---
 
 📂 Project Structure
-
+```
 API-Tester/
 │
 ├── K API Tester.exe          # Stand-alone executable (no installation needed)
@@ -162,7 +162,7 @@ API-Tester/
     ├── post_method.png
     ├── export_feature.png
     └── exception_handling.png
-
+```
 
 ---
 
