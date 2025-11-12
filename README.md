@@ -160,23 +160,67 @@ Storage	JSON Files (History, Collections, Environment)
 ---
 
 📂 Project Structure
+---
+Screenshots
 
-API-Tester/
-│
-├── main.py                  # Main application file
-│
-├── environments/
-│   └── default.json         # Environment variables (hidden, used in backend)
-│
-├── collections/             # Saved API requests
-│
-├── data/
-│   └── history.json         # Request history storage
-│
-└── README.md                # Project documentation
+Below are a few screenshots of the API Tester app in action.
+Each image highlights a key part of the application — from themes to request handling and exporting responses.
 
 
 ---
+
+ Light Theme
+
+The default clean and minimal interface with light colors for easy readability.
+Ideal for bright environments and general usage.
+
+
+
+
+---
+
+Dark Theme
+
+A sleek dark mode for comfortable testing during night or low-light sessions.
+Switching themes happens instantly without any layout shift or flicker.
+
+
+
+
+---
+
+GET Method Example
+
+Example of a GET request to fetch data from an API endpoint.
+The unified output area displays the Status Code, Response Headers, and Response Body in a single scrollable field.
+
+
+
+
+---
+
+ POST Method Example
+
+Demonstrates sending a POST request with a JSON body.
+Useful for creating or updating data on an API server.
+The app automatically formats the JSON response and shows execution time.
+
+
+---
+
+ Export Feature
+
+Showcases the Export Response button, located beside the "Response:" label.
+This feature allows users to save the entire response (status, headers, and body) as a .txt or .json file for offline reference.
+
+
+
+
+---
+
+Exception Handling
+
+Example of how the app handles exception that when no data is in response section it replies with a warning message.
 
 🧠 Challenges Faced
 
