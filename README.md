@@ -185,7 +185,9 @@ Each image highlights a key part of the application — from themes to request h
 The default clean and minimal interface with light colors for easy readability.
 Ideal for bright environments and general usage.
 
-
+<p align="center">
+  <img src="assets/light_theme.png" alt="Light Theme" width="700"/>
+</p>
 
 
 ---
@@ -193,8 +195,10 @@ Ideal for bright environments and general usage.
 Dark Theme
 
 A sleek dark mode for comfortable testing during night or low-light sessions.
-Switching themes happens instantly without any layout shift or flicker.
 
+<p align="center">
+  <img src="assets/dark_theme.png" alt="dark Theme" width="700"/>
+</p>
 
 
 
@@ -204,6 +208,10 @@ GET Method Example
 
 Example of a GET request to fetch data from an API endpoint.
 The unified output area displays the Status Code, Response Headers, and Response Body in a single scrollable field.
+
+<p align="center">
+  <img src="assets/get_method.png" alt="Get Method" width="700"/>
+</p>
 
 
 
@@ -216,7 +224,9 @@ Demonstrates sending a POST request with a JSON body.
 Useful for creating or updating data on an API server.
 The app automatically formats the JSON response and shows execution time.
 
-
+<p align="center">
+  <img src="assets/post_method.png" alt="Post Method" width="700"/>
+</p>
 ---
 
  Export Feature
@@ -225,13 +235,19 @@ Showcases the Export Response button, located beside the "Response:" label.
 This feature allows users to save the entire response (status, headers, and body) as a .txt or .json file for offline reference.
 
 
-
+<p align="center">
+  <img src="assets/export_feature.png" alt="Export Feature" width="700"/>
+</p>
 
 ---
 
 Exception Handling
 
 Example of how the app handles exception that when no data is in response section it replies with a warning message.
+
+<p align="center">
+  <img src="assets/exception_handling.png" alt="Exception Handling" width="700"/>
+</p>
 
 🧠 Challenges Faced
 
