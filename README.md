@@ -1,64 +1,57 @@
-API Tester – A Tkinter-Based Desktop App for API Testing
+# 🚀 API Tester – A Tkinter-Based Desktop App for API Testing
 
-The API Tester is a lightweight, user-friendly desktop application built using Python’s Tkinter library.
+The **API Tester** is a lightweight, user-friendly desktop application built using **Python’s Tkinter** library.  
 It allows you to send and test REST API requests directly from your computer — no browser extensions or heavy tools like Postman required.
 
-This project focuses on simplicity, functionality, and a clean modern interface that adapts to both light and dark themes.
-
+This project focuses on **simplicity, functionality, and a clean modern interface** that adapts to both light and dark themes.
 
 ---
 
- Project Overview
+## 📘 Project Overview
 
 The goal of this project was to create a compact yet powerful tool that lets developers:
 
-Test different API endpoints quickly
-
-View all parts of the response in one place
-
-Save frequently used requests
-
-Export responses for documentation or debugging
-
-Use environment variables for flexible URL management
-
-
+- Test different API endpoints quickly  
+- View all parts of the response in one place  
+- Save frequently used requests  
+- Export responses for documentation or debugging  
+- Use environment variables for flexible URL management  
 
 ---
 
- Features and Concepts Explained
+### 🎥 Demo Link
 
- 1. Modern Tkinter Interface
+> 🔗 **API Tester Demo:** [Watch Demo on Google Drive](https://drive.google.com/file/d/1QhoRGXZrqjOd30_bcHKJUaKMTkaDlTQj/view?usp=drivesdk)
 
-Tkinter is known for being simple but not always visually appealing.
-To overcome that, this app uses custom themes and layout management to create a clean, modern-looking interface.
+---
+
+## ✨ Features and Concepts Explained
+
+### 1. 🖥️ Modern Tkinter Interface
+Tkinter is known for being simple but not always visually appealing.  
+To overcome that, this app uses **custom themes and layout management** to create a clean, modern-looking interface.  
 It automatically resizes to fit 90% of your screen and centers itself on startup, making it look professional and responsive on any display.
 
-
 ---
 
- 2. Light & Dark Themes
-
-Switch between light and dark modes smoothly without the UI flickering or resizing.
+### 2. 🌗 Light & Dark Themes
+Switch between light and dark modes smoothly **without flickering or resizing**.  
 When you toggle the theme, the app remembers the exact geometry and reapplies it, ensuring that nothing “jumps” or shifts on screen.
 
-
 ---
 
-3. API Request Support
-
-You can test GET, POST, PUT and DELETE requests.
+### 3. 🌐 API Request Support
+You can test **GET, POST, PUT, and DELETE** requests.  
 Each request can include:
 
-Custom headers (key-value pairs)
+- Custom headers (key-value pairs)  
+- JSON request body  
+- URLs with placeholders like `{{base_url}}`, which automatically replace values from the environment file  
 
-JSON request body
+**Example:**
 
-URLs with placeholders like {{base_url}}, which automatically replace values from the default environment file.
-
-
-For example, if your default.json file contains:
-
+If your `default.json` file contains:
+```json
 {
   "base_url": "https://jsonplaceholder.typicode.com"
 }
@@ -74,62 +67,60 @@ https://jsonplaceholder.typicode.com/posts/1
 
 ---
 
-4. Unified Response Output
+4. 📦 Unified Response Output
 
 Instead of splitting results into multiple tabs, the API Tester shows everything — status code, response headers, and response body — in a single output box.
-This helps you analyze everything in one glance without switching between views.
 If the body contains valid JSON, it’s automatically formatted for readability.
 
 
 ---
 
-5. Request History
+5. 🕒 Request History
 
 Every request you send is saved in the history panel on the left.
-You can double-click any entry to replay the same request instantly.
-The app stores up to 20 recent requests and automatically saves them in /data/history.json, so your history persists between sessions.
+You can double-click any entry to replay it instantly.
+The app stores up to 20 recent requests in /data/history.json, so your history persists between sessions.
 
 
 ---
 
-6. Save Requests to Collections
+6. 💾 Save Requests to Collections
 
-If you have a request you want to reuse later, you can click the Save button.
-The app will save it as a JSON file inside /collections/, including its method, URL, headers, and body.
-You can easily organize and reload your saved API calls later.
-
-
----
-
-7. Export Response
-
-Every response you receive can be exported to a text or JSON file for documentation or debugging.
-The Export Response button sits neatly on the top-right corner of the response area and saves the entire output — including status, headers, and body — in one click.
+You can save frequently used requests as JSON files inside /collections/, including their method, URL, headers, and body.
+This allows you to easily organize and reload saved API calls later.
 
 
 ---
 
-8. Clear Fields
+7. 📤 Export Response
 
-The Clear button resets all inputs and outputs, so you can start a new test instantly without relaunching the app.
+Each response can be exported to a .txt or .json file for documentation or debugging.
+The “Export Response” button (located beside the Response label) saves the entire output — status, headers, and body — in one click.
 
 
 ---
 
-9. Environment Variables (Hidden but Functional)
+8. 🧹 Clear Fields
 
-Instead of showing an environment dropdown, the app silently loads a file named:
+The Clear button resets all inputs and outputs so you can start a new test instantly — without restarting the app.
+
+
+---
+
+9. 🔒 Environment Variables (Hidden but Functional)
+
+The app silently loads:
 
 /environments/default.json
 
-This allows you to define key-value pairs (like base_url or auth_token) that can be used in any request without cluttering the interface.
+This allows you to define key-value pairs (like base_url or auth_token) used in any request, without cluttering the interface.
 
 
 ---
 
-10. Error Handling & Stability
+10. 🛡️ Error Handling & Stability
 
-The app uses Python’s requests library and handles most common errors gracefully:
+Built with Python’s requests library, the app handles errors gracefully:
 
 Invalid JSON bodies
 
@@ -142,16 +133,15 @@ Non-JSON responses
 
 If something goes wrong, you’ll see a clear error message in the response box instead of a crash.
 
+
 ---
 
-<img width="1536" height="1024" alt="file_00000000a8dc7209bf0af5a153652493 (1)" src="https://github.com/user-attachments/assets/ab352b60-4c80-4035-a713-ac74ceb71774" />
-
-Tech Stack
+🧰 Tech Stack
 
 Component	Description
 
 Language	Python 3.8+
-GUI Framework	Tkinter
+GUI	Tkinter
 Networking	Requests
 Storage	JSON Files (History, Collections, Environment)
 
@@ -160,191 +150,132 @@ Storage	JSON Files (History, Collections, Environment)
 ---
 
 📂 Project Structure
+
 API-Tester/
 │
 ├── K API Tester.exe          # Stand-alone executable (no installation needed)
 ├── README.md                 # Project documentation
-└── assets/                   # Folder containing screenshots for this README
+└── assets/                   # Screenshots for this README
     ├── light_theme.png
     ├── dark_theme.png
     ├── get_method.png
     ├── post_method.png
     ├── export_feature.png
     └── exception_handling.png
----
-Screenshots
-
-Below are a few screenshots of the API Tester app in action.
-Each image highlights a key part of the application — from themes to request handling and exporting responses.
 
 
 ---
 
- Light Theme
+🖼️ Screenshots
 
-The default clean and minimal interface with light colors for easy readability.
-Ideal for bright environments and general usage.
+🌞 Light Theme
 
 <p align="center">
   <img src="assets/light_theme.png" alt="Light Theme" width="700"/>
 </p>
-
-
 ---
 
-Dark Theme
-
-A sleek dark mode for comfortable testing during night or low-light sessions.
+🌙 Dark Theme
 
 <p align="center">
-  <img src="assets/dark_theme.png" alt="dark Theme" width="700"/>
+  <img src="assets/dark_theme.png" alt="Dark Theme" width="700"/>
 </p>
-
-
-
 ---
 
-GET Method Example
-
-Example of a GET request to fetch data from an API endpoint.
-The unified output area displays the Status Code, Response Headers, and Response Body in a single scrollable field.
+🔍 GET Method Example
 
 <p align="center">
   <img src="assets/get_method.png" alt="Get Method" width="700"/>
 </p>
-
-
-
-
 ---
 
- POST Method Example
-
-Demonstrates sending a POST request with a JSON body.
-Useful for creating or updating data on an API server.
-The app automatically formats the JSON response and shows execution time.
+📨 POST Method Example
 
 <p align="center">
   <img src="assets/post_method.png" alt="Post Method" width="700"/>
 </p>
 ---
 
- Export Feature
-
-Showcases the Export Response button, located beside the "Response:" label.
-This feature allows users to save the entire response (status, headers, and body) as a .txt or .json file for offline reference.
-
+📁 Export Feature
 
 <p align="center">
   <img src="assets/export_feature.png" alt="Export Feature" width="700"/>
 </p>
-
 ---
 
-Exception Handling
-
-Example of how the app handles exception that when no data is in response section it replies with a warning message.
+⚠️ Exception Handling
 
 <p align="center">
   <img src="assets/exception_handling.png" alt="Exception Handling" width="700"/>
 </p>
+---
 
 🧠 Challenges Faced
 
 1. Making Tkinter Look Modern
+Fine-tuned colors, padding, and font styles for a clean UI.
 
-Tkinter doesn’t have built-in dark mode or styling like modern UI frameworks.
-It took a lot of fine-tuning with colors, padding, and font styles to make it visually appealing.
 
 2. Preventing Layout Shifts
+Locked window geometry before theme changes to prevent UI jumps.
 
-When toggling between light and dark themes, the UI initially “jumped” due to re-rendering.
-I solved this by locking the window geometry before applying the new theme and restoring it afterward.
 
-3. Merging Response Tabs into One View
+3. Merging Response Tabs
+Combined Raw, JSON, and Headers views into one unified display.
 
-The first version had separate tabs for Raw, JSON, and Headers.
-They worked, but switching between them felt clunky.
-Combining them into one view required careful formatting but made the app much easier to use.
 
 4. Handling Multiple Content Types
+Added fallback for non-JSON responses to prevent crashes.
 
-Not all APIs return JSON — some return plain text or HTML.
-To prevent the app from crashing, I added a fallback mechanism that prints the response as text if JSON parsing fails.
 
 5. Keeping It Lightweight
+Avoided external libraries — only requests is used.
 
-I wanted to keep the project dependency-free except for requests, so I avoided external libraries for theming or layout.
-This made the code more educational and easy for others to understand.
 
-6.EXE Crashing Due to Missing .ico File
-
-After converting the Python script to a standalone .exe using PyInstaller, the app crashed immediately when run on another system.
-The error was caused by a missing .ico file that wasn’t bundled properly during build.
-
-Added the icon explicitly in the PyInstaller command:
+6. EXE Crashing Due to Missing .ico File
+Fixed PyInstaller build with:
 
 pyinstaller --onefile --noconsole --icon=icon.ico main.py
 
-and ensured icon.ico was located in the same directory as main.py.
-This prevented missing-file crashes.
+
+7. Blurry Icon on Windows Scaling
+Replaced with a multi-resolution .ico (16×16 to 256×256) for crisp rendering.
 
 
----
-
-7. Blurry Icon in Title Bar and Taskbar
-
-After fixing the crash, the icon appeared blurry and pixelated on some Windows systems, especially with scaling enabled (125% or 150% DPI).
-
-The .ico used had a single small resolution (e.g., 32×32 px), which Windows scaled poorly.
-
-Replaced it with a multi-resolution ICO file containing multiple sizes (16×16, 32×32, 48×48, 64×64, and 256×256).
-This was created using an image editor (like GIMP or ICOConvert) to ensure crisp icons in both the title bar and taskbar.
 
 
 ---
 
-Installation (Single EXE File)
+⚙️ Installation (Single EXE File)
 
-You don’t need to install Python or any libraries.
-The entire app is packaged into one single .exe file for easy use.
+No Python or library installation required — the app runs as a standalone executable.
 
- Windows Installation Steps
+🪟 Windows Installation Steps
 
-1. Download the file
-
-Go to the Releases section of this repository.
-
-Download the file named K API Tester.exe.
+1. Download the File
+Go to the Releases section and download K API Tester.exe.
 
 
-
-2. Run the app
-
-Double-click on K API Tester.exe.
-
-The application will open instantly — no installation or setup needed.
+2. Run the App
+Double-click K API Tester.exe — no setup needed.
 
 
-
-3. Automatic setup (first launch)
-
-The app will automatically create the following folders (if they don’t already exist):
+3. Automatic Setup (First Launch)
+Creates folders if missing:
 
 /environments
 /collections
 /data
 
-These are used for saving your request history, environment variables, and saved collections.
-
-
 
 4. Start Testing APIs!
+Enter a URL, choose a method, and click Send.
+View the response, status, and headers in one window.
 
-Enter a URL, choose a method (GET, POST, PUT, DELETE, PATCH), and click Send.
 
-You’ll see the response, status, and headers in a single output window.
---
+
+
+---
 
 📜 License
 
@@ -358,4 +289,5 @@ This project is licensed under the MIT License — you are free to use, modify, 
 This project was an exciting journey in combining GUI development and API testing in Python.
 It started as a small experiment to simplify API debugging and evolved into a full-fledged desktop application.
 
-The biggest takeaway was that even with a simple toolkit like Tkinter, it’s possible to create elegant, functional, and professional-grade tools with the right design mindset.
+Key Takeaway:
+Even with a simple toolkit like Tkinter, you can create elegant, functional, and professional-grade tools with the right design mindset.
