@@ -158,7 +158,8 @@ Storage	JSON Files (History, Collections, Environment)
 ```
 API-Tester/
 │
-├── K API Tester.exe          # Stand-alone executable (no installation needed)
+├── main(1).py                # Main Python script for the API Tester app
+├── requirements.txt          # Python dependencies for running the app
 ├── README.md                 # Project documentation
 └── assets/                   # Screenshots for this README
     ├── light_theme.png
