@@ -145,10 +145,10 @@ If something goes wrong, you’ll see a clear error message in the response box 
 
 Component	Description
 
-Language	Python 3.8+
-GUI	Tkinter
-Networking	Requests
-Storage	JSON Files (History, Collections, Environment)
+Language:	Python 3.8+
+GUI:	Tkinter
+Networking:	Requests
+Storage	:JSON Files (History, Collections, Environment)
 
 
 
