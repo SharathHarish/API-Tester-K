@@ -1,6 +1,6 @@
-# 🚀 API Tester – A Tkinter-Based Desktop App for API Testing
+# 🚀K API Tester – A Tkinter-Based Desktop App for API Testing
 
-The **API Tester** is a lightweight, user-friendly desktop application built using **Python’s Tkinter** library.  
+The **K API Tester** is a lightweight, user-friendly desktop application built using **Python’s Tkinter** library.  
 It allows you to send and test REST API requests directly from your computer — no browser extensions or heavy tools like Postman required.
 
 This project focuses on **simplicity, functionality, and a clean modern interface** that adapts to both light and dark themes.
@@ -24,7 +24,7 @@ The goal of this project was to create a compact yet powerful tool that lets dev
 > 🔗 **API Tester Demo:** [Watch Demo on Google Drive](https://drive.google.com/file/d/1YTr7werZ6IkyY_LLjKL473ALDqfNeh9H/view?usp=drivesdk)
 
 ## 🔽 Executable File Download
-You can download the latest version of **K API Tester** here:
+You can download the lateversionion of **K API Tester** here:
 
 👉 [Download K API Tester (.exe)](
 https://github.com/SharathHarish/API-Tester-K/releases/download/v1.0.0/K.API.Tester.exe)
